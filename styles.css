@@ -1,0 +1,55 @@
+
+h1{
+
+    text-align: center;
+}
+
+.flex-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px; 
+    margin: 50px; 
+    border: 1px solid #ccc; 
+    background-color: lightsalmon;
+    
+}
+
+
+.flex-item {
+    padding: 10px; 
+    margin: 5px;
+    border: 1px solid #333; 
+    border-radius: 10px;
+    background-color: lightgreen;
+    
+}
+
+
+.order-button {
+    padding: 10px 20px;
+    background-color: #FF5733; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.order-button:hover {
+    background-color: #FF4020; 
+}
+
+
+
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: flex-start; 
+        background-color: lightgreen;
+    }
+    .flex-item{
+
+        background-color: lightsalmon;
+    }
+}
